@@ -11,8 +11,6 @@
 // See the License for the specific language governing permissions and limitations under the License.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace behaviac
@@ -23,6 +21,7 @@ namespace behaviac
         {
             m_until = true;
         }
+
         ~DecoratorLoopUntil()
         {
         }
@@ -31,7 +30,7 @@ namespace behaviac
         {
             base.load(version, agentType, properties);
 
-            foreach (property_t p in properties)
+            foreach(property_t p in properties)
             {
                 if (p.name == "Until")
                 {
@@ -61,15 +60,12 @@ namespace behaviac
         however, if m_until is false, the checking condition is inverted.
         i.e. it Returns EBTStatus.BT_RUNNING until the child returns EBTStatus.BT_FAILURE. if the child returns EBTStatus.BT_SUCCESS, it still returns EBTStatus.BT_RUNNING
         */
-        class DecoratorLoopUntilTask : DecoratorCountTask
-        {
-            public DecoratorLoopUntilTask() : base()
-            {
-            }
 
-            public override bool NeedRestart()
+        private class DecoratorLoopUntilTask : DecoratorCountTask
+        {
+            public DecoratorLoopUntilTask()
+                : base()
             {
-                return true;
             }
 
             public override void copyto(BehaviorTask target)
@@ -81,6 +77,7 @@ namespace behaviac
             {
                 base.save(node);
             }
+
             public override void load(ISerializableNode node)
             {
                 base.load(node);

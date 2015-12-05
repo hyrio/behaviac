@@ -41,9 +41,13 @@ using Behaviac.Design.Attributes;
 namespace Behaviac.Design.Nodes
 {
     [Behaviac.Design.EnumDesc("Behaviac.Design.Nodes.OperatorType", true, "OperatorType", "OperatorTypeDesc")]
-    public enum OperatorType
-    {
+    public enum OperatorType {
         //Noop,
+        [Behaviac.Design.EnumMemberDesc("Assignment", true, "=", "OperatorType_Assignment")]
+        Assignment,
+
+        //[Behaviac.Design.EnumMemberDesc("In", true, "in", "OperatorType_In")]
+        //In,
 
         [Behaviac.Design.EnumMemberDesc("And", true, "&&", "OperatorType_And")]
         And,
@@ -80,6 +84,11 @@ namespace Behaviac.Design.Nodes
         {
         }
 
+        public override bool IsCondition
+        {
+            get { return true; }
+        }
+
         private readonly static Brush __defaultBackgroundBrush = new SolidBrush(Color.FromArgb(200, 100, 39));
         protected override Brush DefaultBackgroundBrush
         {
@@ -92,6 +101,11 @@ namespace Behaviac.Design.Nodes
             nvd.ChangeShape(NodeShape.AngleRectangle);
 
             return nvd;
+        }
+
+        public override bool AcceptsAttachment(DefaultObject obj)
+        {
+            return false;
         }
     }
 }

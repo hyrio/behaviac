@@ -11,8 +11,6 @@
 // See the License for the specific language governing permissions and limitations under the License.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace behaviac
@@ -21,7 +19,7 @@ namespace behaviac
     {
         public SelectorProbability()
         {
-		}
+        }
 
         ~SelectorProbability()
         {
@@ -32,7 +30,7 @@ namespace behaviac
         {
             base.load(version, agentType, properties);
 
-            foreach (property_t p in properties)
+            foreach(property_t p in properties)
             {
                 if (p.name == "RandomGenerator")
                 {
@@ -89,11 +87,11 @@ namespace behaviac
         This weight system is intended to facilitate the fine-tuning of behaviors.
         */
 
-        class SelectorProbabilityTask : CompositeTask
+        private class SelectorProbabilityTask : CompositeTask
         {
             public SelectorProbabilityTask()
             {
-			}
+            }
 
             ~SelectorProbabilityTask()
             {
@@ -144,6 +142,7 @@ namespace behaviac
             protected override void onexit(Agent pAgent, EBTStatus s)
             {
                 this.m_activeChildIndex = CompositeTask.InvalidChildIndex;
+                base.onexit(pAgent, s);
             }
 
             protected override EBTStatus update(Agent pAgent, EBTStatus childStatus)
@@ -168,8 +167,8 @@ namespace behaviac
 
                 Debug.Check(this.m_weightingMap.Count == this.m_children.Count);
 
-				//generate a number between 0 and the sum of the weights
-				float chosen = this.m_totalSum * CompositeStochastic.CompositeStochasticTask.GetRandomValue(pSelectorProbabilityNode.m_method, pAgent);
+                //generate a number between 0 and the sum of the weights
+                float chosen = this.m_totalSum * CompositeStochastic.CompositeStochasticTask.GetRandomValue(pSelectorProbabilityNode.m_method, pAgent);
 
                 float sum = 0;
 
@@ -179,7 +178,7 @@ namespace behaviac
 
                     sum += w;
 
-					if (w > 0 && sum >= chosen) //execute this node
+                    if (w > 0 && sum >= chosen)   //execute this node
                     {
                         BehaviorTask pChild = this.m_children[i];
 
@@ -201,8 +200,8 @@ namespace behaviac
                 return EBTStatus.BT_FAILURE;
             }
 
-            List<int> m_weightingMap = new List<int>();
-            int m_totalSum;
+            private List<int> m_weightingMap = new List<int>();
+            private int m_totalSum;
         }
     }
 }

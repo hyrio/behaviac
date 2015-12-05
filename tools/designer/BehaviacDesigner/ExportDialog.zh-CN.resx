@@ -124,11 +124,14 @@
     <value>取消</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 7</value>
+  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 13</value>
+    <value>141, 13</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>选择行为树:</value>
+    <value>选择需要导出的行为树:</value>
   </data>
   <data name="exportSettingLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 13</value>
@@ -138,45 +141,45 @@
   </data>
   <data name="imageList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABS
-        CQAAAk1TRnQBSQFMAgEBAgEAAZQBAAGUAQABEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
-        AwABEAMAAQEBAAEgBgABEP8AWwABtwGiAZMB/wFOATQBIAH/AU4BNAEgAf8BTgE0ASAB/wFOATQBIAH/
-        AU4BNAEgAf8BTgE0ASAB/wFOATQBIAH/AU4BNAEgAf8BTgE0ASAB/wFOATQBIAH/jAABYAGEAY8B/wFX
-        AWUBhQH/AUsBWAFiAf8BPAFIAVEB/wEtATcBPwH/ARwBJQEsAf8BDgEVARsB/wEBAQcBDAH/AgABAwH/
-        AgABAwH/AgABAwH/AgABAwH/AgABAwH/AgABAwH/AgABAwH/DAABtwGiAZMF/wG3AaIBkwH/AbcBogGT
-        Af8BtwGiAZMB/wG3AaIBkwH/AbcBogGTAf8BtwGiAZMB/wG3AaIBkwH/AbcBogGTAf8BTgE0ASAB/4wA
-        AWIBhwGSAf8BogHfAfAB/wFbAc0B6gH/ATQBuAHiAf8BIgGuAdsB/wEYAakB2QH/AREBoQHSAf8BDAGY
-        AccB/wELAY4BvAH/AQkBgwGuAf8BBAFqAasB/wEAAWcBqQH/AQYBYgGfAf8BCgFdAZYB/wEBAQcBDAH/
+        CQAAAk1TRnQBSQFMAgEBAgEAAaQBAAGkAQABEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        AwABEAMAAQEBAAEgBgABEP8AWwABtwGiAZMB/wFMATIBHgH/AUwBMgEeAf8BTAEyAR4B/wFMATIBHgH/
+        AUwBMgEeAf8BTAEyAR4B/wFMATIBHgH/AUwBMgEeAf8BTAEyAR4B/wFMATIBHgH/jAABXgGEAY8B/wFV
+        AWMBhQH/AUkBVgFgAf8BOgFGAU8B/wErATUBPQH/ARoBIwEqAf8BDAETARkB/wEAAQUBCgH/AgABAQH/
+        AgABAQH/AgABAQH/AgABAQH/AgABAQH/AgABAQH/AgABAQH/DAABtwGiAZMF/wG3AaIBkwH/AbcBogGT
+        Af8BtwGiAZMB/wG3AaIBkwH/AbcBogGTAf8BtwGiAZMB/wG3AaIBkwH/AbcBogGTAf8BTAEyAR4B/4wA
+        AWABhwGSAf8BogHfAfAB/wFZAc0B6gH/ATIBuAHiAf8BIAGuAdsB/wEWAakB2QH/AQ8BoQHSAf8BCgGY
+        AccB/wEJAY4BvAH/AQcBgwGuAf8BAgFoAasB/wEAAWUBqQH/AQQBYAGfAf8BCAFbAZYB/wEAAQUBCgH/
         DAABtwGiAZMJ/wH8AfoB+QH/AfcB8QHuAf8B8QHnAeEB/wHsAd0B1QH/AeYB0wHJAf8B4QHKAb0B/wG3
-        AaIBkwH/AU4BNAEgAf+MAAFlAYoBlQH/AaoB6AH2Af8BlQHlAfwB/wGEAd8B+wH/AWAB1gH6Af8BVQHQ
-        AfcB/wFIAcYB9AH/ATsBvgHwAf8BLAG0AewB/wEgAaoB6AH/ARYBpAHmAf8BCwGaAd8B/wEBAZAB1wH/
-        AQYBYgGfAf8BCwESARgB/wwAAbcBogGTCf8D/gH/AfoB9wH1Af8B9QHtAekB/wHvAeMB3AH/AeoB2QHR
-        Af8B5AHPAcQB/wG3AaIBkwH/AU4BNAEgAf+MAAFoAY4BmAH/AbAB6gH2Af8BnwHpAfsB/wGSAeQB/AH/
-        AYEB3QH7Af8BYAHWAfoB/wFTAc4B9wH/AUgBxgH0Af8BOAG8AfAB/wEsAbQB7AH/ASABqgHoAf8BFQGj
-        AeYB/wEIAZYB3AH/AQABZwGpAf8BGAEfASYB/wwAAbcBogGTDf8B/QH8AfsB/wH4AfMB8AH/AfIB6QHj
-        Af8B7QHfAdgB/wHnAdUBywH/AbcBogGTAf8BTgE0ASAB/4wAAYABkQGcAf8BtgHtAfgB/wGqAewB+wH/
-        AZsB6AH7Af8BjwHjAfwB/wGBAd0B+wH/AVwB1QH5Af8BUwHOAfcB/wFGAcUB9AH/ATgBvAHwAf8BKAGy
-        AewB/wEdAakB6AH/AQ8BngHiAf8BAAGCAbQB/wEmAS4BNgH/DAABugGlAZYR/wH7AfgB9wH/AfYB7wHr
-        Af8B8AHlAd8B/wHrAdsB0wH/AbcBogGTAf8BTgE0ASAB/4wAAYMBlQGfAf8BvgHwAfkB/wGrAfAB9wH/
-        AaUB7AH7Af8BmAHnAfsB/wGJAeEB/AH/AWoB3QH7Af8BXAHVAfkB/wFQAc0B9wH/AUMBxAHzAf8BNgG7
-        AfAB/wEoAbIB7AH/ARcBpAHjAf8BAAGKAb8B/wE0AT4BRwH/DAABvgGpAZoR/wH+Af0B/AH/AfkB9QHy
-        Af8B9AHrAeYB/wHuAeEB2gH/AbcBogGTAf8BTgE0ASAB/4wAAYYBmQGjAf8BvgHwAfkB/wG2Ae0B+AH/
-        AbAB7gH6Af8BpAHrAfoB/wGVAeYB+wH/AYkB4QH8Af8BaAHcAfwB/wFcAdUB+QH/AVABzQH3Af8BQwHE
-        AfMB/wE0AbkB7wH/ASABqQHnAf8BAAGPAccB/wFCAU4BVgH/DAABwwGuAZ4V/wH8AfoB+QH/AfcB8QHu
-        Af8B8QHnAeEB/wG3AaIBkwH/AU4BNAEgAf+MAAGJAZwBpgH/Ab4B8AH5Af8BtgHtAfgB/wG2Ae0B+AH/
-        AasB8AH3Af8BogHsAfoB/wGVAeYB+wH/AYkB4QH8Af8BaAHcAfwB/wFaAdMB+gH/AU4BzAH3Af8BQAHD
-        AfMB/wE0AbkB7wH/AQQBmQHPAf8BTgFbAWUB/wwAAcgBsgGjFf8D/gH/AfoB9wH1Af8B9QHtAekB/wG3
-        AaIBkwH/AU4BNAEgAf+MAAGLAaABqAH/Ab4B8AH5Af8BvgHwAfkB/wG+AfAB+QH/Ab4B8AH5Af8BtAHy
-        AfgB/wGqAewB+wH/AaAB6QH7Af8BlQHlAfwB/wGKAd8B/AH/AWoB2AH7Af8BXwHSAfgB/wFTAcoB9AH/
-        AUgBwAHxAf8BTgFbAWUB/wwAAcwBtgGnGf8B/QH8AfsB/wG3AaIBkwH/AbcBogGTAf8BTwE1ASEB/4wA
+        AaIBkwH/AUwBMgEeAf+MAAFjAYoBlQH/AaoB6AH2Af8BlQHlAfwB/wGEAd8B+wH/AV4B1gH6Af8BUwHQ
+        AfcB/wFGAcYB9AH/ATkBvgHwAf8BKgG0AewB/wEeAaoB6AH/ARQBpAHmAf8BCQGaAd8B/wEAAZAB1wH/
+        AQQBYAGfAf8BCQEQARYB/wwAAbcBogGTCf8D/gH/AfoB9wH1Af8B9QHtAekB/wHvAeMB3AH/AeoB2QHR
+        Af8B5AHPAcQB/wG3AaIBkwH/AUwBMgEeAf+MAAFmAY4BmAH/AbAB6gH2Af8BnwHpAfsB/wGSAeQB/AH/
+        AYEB3QH7Af8BXgHWAfoB/wFRAc4B9wH/AUYBxgH0Af8BNgG8AfAB/wEqAbQB7AH/AR4BqgHoAf8BEwGj
+        AeYB/wEGAZYB3AH/AQABZQGpAf8BFgEdASQB/wwAAbcBogGTDf8B/QH8AfsB/wH4AfMB8AH/AfIB6QHj
+        Af8B7QHfAdgB/wHnAdUBywH/AbcBogGTAf8BTAEyAR4B/4wAAYABkQGcAf8BtgHtAfgB/wGqAewB+wH/
+        AZsB6AH7Af8BjwHjAfwB/wGBAd0B+wH/AVoB1QH5Af8BUQHOAfcB/wFEAcUB9AH/ATYBvAHwAf8BJgGy
+        AewB/wEbAakB6AH/AQ0BngHiAf8BAAGCAbQB/wEkASwBNAH/DAABugGlAZYR/wH7AfgB9wH/AfYB7wHr
+        Af8B8AHlAd8B/wHrAdsB0wH/AbcBogGTAf8BTAEyAR4B/4wAAYMBlQGfAf8BvgHwAfkB/wGrAfAB9wH/
+        AaUB7AH7Af8BmAHnAfsB/wGJAeEB/AH/AWgB3QH7Af8BWgHVAfkB/wFOAc0B9wH/AUEBxAHzAf8BNAG7
+        AfAB/wEmAbIB7AH/ARUBpAHjAf8BAAGKAb8B/wEyATwBRQH/DAABvgGpAZoR/wH+Af0B/AH/AfkB9QHy
+        Af8B9AHrAeYB/wHuAeEB2gH/AbcBogGTAf8BTAEyAR4B/4wAAYYBmQGjAf8BvgHwAfkB/wG2Ae0B+AH/
+        AbAB7gH6Af8BpAHrAfoB/wGVAeYB+wH/AYkB4QH8Af8BZgHcAfwB/wFaAdUB+QH/AU4BzQH3Af8BQQHE
+        AfMB/wEyAbkB7wH/AR4BqQHnAf8BAAGPAccB/wFAAUwBVAH/DAABwwGuAZ4V/wH8AfoB+QH/AfcB8QHu
+        Af8B8QHnAeEB/wG3AaIBkwH/AUwBMgEeAf+MAAGJAZwBpgH/Ab4B8AH5Af8BtgHtAfgB/wG2Ae0B+AH/
+        AasB8AH3Af8BogHsAfoB/wGVAeYB+wH/AYkB4QH8Af8BZgHcAfwB/wFYAdMB+gH/AUwBzAH3Af8BPgHD
+        AfMB/wEyAbkB7wH/AQIBmQHPAf8BTAFZAWMB/wwAAcgBsgGjFf8D/gH/AfoB9wH1Af8B9QHtAekB/wG3
+        AaIBkwH/AUwBMgEeAf+MAAGLAaABqAH/Ab4B8AH5Af8BvgHwAfkB/wG+AfAB+QH/Ab4B8AH5Af8BtAHy
+        AfgB/wGqAewB+wH/AaAB6QH7Af8BlQHlAfwB/wGKAd8B/AH/AWgB2AH7Af8BXQHSAfgB/wFRAcoB9AH/
+        AUYBwAHxAf8BTAFZAWMB/wwAAcwBtgGnGf8B/QH8AfsB/wG3AaIBkwH/AbcBogGTAf8BTQEzAR8B/4wA
         AY0BoQGqAf8BjQGhAaoB/wGNAaEBqgH/AY0BoQGqAf8BjQGhAaoB/wGLAZ8BqAH/AYkBnAGmAf8BiQGb
-        AaYB/wGHAZoBpAH/AYYBmQGjAf8BhAGWAaAB/wGEAZYBoAH/AYMBlQGgAf8BgwGVAaAB/wFgAYQBjwH/
-        DAAB0QG7AasZ/wG3AaIBkwH/AU8BNQEhAf8BTwE1ASEB/wFPATUBIQH/jAABjwGkAawB/wGyAeQB7AH/
+        AaYB/wGHAZoBpAH/AYYBmQGjAf8BhAGWAaAB/wGEAZYBoAH/AYMBlQGgAf8BgwGVAaAB/wFeAYQBjwH/
+        DAAB0QG7AasZ/wG3AaIBkwH/AU0BMwEfAf8BTQEzAR8B/wFNATMBHwH/jAABjwGkAawB/wGyAeQB7AH/
         AbYB7QH4Af8BtgHtAfgB/wGpAewB9gH/AZIB4QHzAf8BjQGhAaoB/wHVAdwB4AH/KAAB1QG/Aa8Z/wG5
-        AaQBlQH/AdQBxQG6Af8BTwE1ASEB/wNKAYyMAAHaAd4B4QH/AY8BpAGsAf8BjwGkAawB/wGPAaQBrAH/
-        AY8BpAGsAf8BjwGkAawB/wHVAdwB4AH/LAAB2AHCAbIZ/wHAAasBnAH/AU8BNQEhAf8DSgGL2AAB2AHC
+        AaQBlQH/AdQBxQG6Af8BTQEzAR8B/wNKAYyMAAHaAd4B4QH/AY8BpAGsAf8BjwGkAawB/wGPAaQBrAH/
+        AY8BpAGsAf8BjwGkAawB/wHVAdwB4AH/LAAB2AHCAbIZ/wHAAasBnAH/AU0BMwEfAf8DSgGL2AAB2AHC
         AbIB/wHYAcIBsgH/AdgBwgGyAf8B2AHCAbIB/wHYAcIBsgH/AdQBvgGuAf8BzwG5AakB/wHJAbMBpAH/
         A0oBi/8AlQABQgFNAT4HAAE+AwABKAMAAUADAAEQAwABAQEAAQEFAAGAFwAD/wEABP8EAAL/AcABBwUA
         AQEBwAEHBQABAQHAAQcFAAEBAcABBwUAAQEBwAEHBQABAQHAAQcFAAEBAcABBwUAAQEBwAEHBQABAQHA
@@ -188,6 +191,25 @@
   </data>
   <data name="Setting.HeaderText" xml:space="preserve">
     <value>设置</value>
+  </data>
+  <data name="exportCustomizedMetaCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 16</value>
+  </data>
+  <data name="exportCustomizedMetaCheckBox.Text" xml:space="preserve">
+    <value>是否导出定制的元信息?</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="onlyShowErrorsCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="onlyShowErrorsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 345</value>
+  </data>
+  <data name="onlyShowErrorsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 16</value>
+  </data>
+  <data name="onlyShowErrorsCheckBox.Text" xml:space="preserve">
+    <value>只显示错误文件?</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
